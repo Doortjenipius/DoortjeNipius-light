@@ -16,13 +16,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    
     }
 
+    // Knop is gelinkt aan deze functie.
     @IBAction func buttonPressed(_ sender: Any) {
         lightOn = !lightOn
         updateUI()
     }
-        
+    
+    // Update de achtergrondkleur van oranje naar groen.
     func updateUI() {
-        view.backgroundColor = lightOn ? .white : .black}
+        view.backgroundColor = lightOn ? .orange : .green}
 }
+
