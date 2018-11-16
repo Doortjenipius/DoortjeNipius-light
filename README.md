@@ -4,7 +4,7 @@ In deze app kan je door middel van klikken het licht aan het uit zetten. De butt
 
 ### Verbeterde versie: 
 
-![screenshot1](Doc/orangescreen.png )
+![screenshot1](Doc/orangescreen.png)
 ![screenshot1](Doc/greenscreen.png)
 
 
