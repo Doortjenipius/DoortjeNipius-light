@@ -19,14 +19,27 @@ class ViewController: UIViewController {
     
     }
 
-    // Knop is gelinkt aan deze functie.
+    // Knop is gelinkt aan de functie buttonPressed. Zodra er wordt geklikt verandert hij naar lightOn of andersom en update hij in de updateUI de achtergrondkleur.
     @IBAction func buttonPressed(_ sender: Any) {
         lightOn = !lightOn
         updateUI()
     }
     
-    // Update de achtergrondkleur van oranje naar groen.
+
+    func randomBackground() -> UIColor {
+        //drand48 geneert een nummer tussen 0 en 1.
+        let red:CGFloat = CGFloat(drand48())
+        let green:CGFloat = CGFloat(drand48())
+        let blue:CGFloat = CGFloat(drand48())
+        
+        // red, green en blue worden nu constant anders aangeroepen door drand48. 
+        return UIColor(red:red, green: green, blue: blue, alpha: 1)
+    }
+    
+    // Update de achtergrondkleur door randomBackground aan te roepen.
     func updateUI() {
-        view.backgroundColor = lightOn ? .orange : .green}
+        self.view.backgroundColor = randomBackground()
+}
+
 }
 
