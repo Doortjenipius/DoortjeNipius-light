@@ -1,8 +1,9 @@
 ### Light app
 
-In deze app kan je door middel van klikken op de buttons PRESS ME de achtergrondkleur van de app veranderen. De achtergrondkleuren worden random aangeroepen en zullen elke keer anders zijn. 
+In deze app kan je door middel van klikken op de buttons PRESS ME de achtergrondkleur van de app veranderen. 
 
-### Verbeterde versie: 
+###  Extra
+De achtergrondkleuren worden random aangeroepen en zullen elke keer anders zijn. 
 
 ![screenshot1](Doc/Green.png)
 ![screenshot2](Doc/Red.png)

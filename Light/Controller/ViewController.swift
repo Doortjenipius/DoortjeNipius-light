@@ -9,23 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     var lightOn = true
     @IBOutlet weak var lightButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    
+        
     }
-
+    
     // Knop is gelinkt aan de functie buttonPressed. Zodra er wordt geklikt verandert hij naar lightOn of andersom en update hij in de updateUI de achtergrondkleur.
     @IBAction func buttonPressed(_ sender: Any) {
         lightOn = !lightOn
         updateUI()
     }
     
-
+    
     func randomBackground() -> UIColor {
         //drand48 geneert een nummer tussen 0 en 1.
         let red:CGFloat = CGFloat(drand48())
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     // Update de achtergrondkleur door randomBackground aan te roepen.
     func updateUI() {
         self.view.backgroundColor = randomBackground()
-}
-
+    }
+    
 }
 
